@@ -46,4 +46,5 @@ liwc2015 <- function(dictionary_file, data_folder){
     print(paste("Results saved as", output_file))
     
   } else { print(paste("No .txt file found, please check the input folder:", data_folder)) }
+  return (results)
 }
