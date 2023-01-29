@@ -1,7 +1,7 @@
 # LIWC2015
 A program built on LIWCalike and quanteda to produce LIWC2015 results
 
-Note: This program does not provide LIWC dictionaries, users need to have LIWC dictionary files to produce LIWC2015 results.
+Note: This program does not provide LIWC dictionaries, users need to have LIWC dictionary files to produce [LIWC2015](https://www.liwc.app/static/documents/LIWC2015%20Manual%20-%20Development%20and%20Psychometrics.pdf) results.
 
 ### Installation
 The following packages need to be installed for this program to work:
@@ -54,7 +54,7 @@ Since `LIWCalike()` and the LIWC2015 software still have other differences on to
 
 For example, ["LIWC2015 counts red-shirted as two words (since it is not in the LIWC dictionary), and ex-boyfriend as a single word since it is in the dictionary."](https://www.liwc.app/static/documents/LIWC2015%20Manual%20-%20Operation.pdf) rather than pre-defined splitting all or none of the hyphenated words (i.e., `split_hyphens = TRUE` or `split_hyphens = FALSE`).
 
-In general, LIWC2015 will check if the word is in the LIWC dictionary before splitting, such as :( will not be split as : and ( before it is in the LIWC dictionary (Informal and Netspeak categories). Therefore, punctuation should not be pre-definedd as removed all or none (i.e., `remove_punct = TRUE` or`remove_punct = FALSE`).
+In general, LIWC2015 will check if the word is in the LIWC dictionary before splitting, such as :( will not be split as : and ( because it is in the LIWC dictionary (Affect, Negemo, Informal and Netspeak categories). Therefore, punctuation should not be pre-defined as removed all or none (i.e., `remove_punct = TRUE` or`remove_punct = FALSE`).
 
 ### Remark
 `liwc2015()` is created for studying and comparing `LIWCalike()` and the LIWC2015 software, this program is not a replacement of the LIWC2015 software. LIWC created by [Professor James Pennebaker](https://scholar.google.com/citations?user=KYOCMe0AAAAJ&hl=en) is a very comprehensive computerized text analysis tool. To get the complete feature and the latest LIWC (currently LIWC-22), purchase the LIWC software at <https://www.liwc.app/>.
